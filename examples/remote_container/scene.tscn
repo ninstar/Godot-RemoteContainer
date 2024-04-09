@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cixkw7f83ylsv"]
+[gd_scene load_steps=11 format=3 uid="uid://cixkw7f83ylsv"]
 
-[ext_resource type="Script" path="res://example/script.gd" id="1_cmmrs"]
-[ext_resource type="Texture2D" uid="uid://chl8j63gob5yj" path="res://icon.svg" id="1_l3gds"]
+[ext_resource type="Script" path="res://examples/remote_container/script.gd" id="1_cmmrs"]
+[ext_resource type="Texture2D" uid="uid://chl8j63gob5yj" path="res://examples/remote_container/source.svg" id="1_l3gds"]
 [ext_resource type="Script" path="res://addons/remote_container/remote_container.gd" id="1_pgkge"]
+[ext_resource type="Texture2D" uid="uid://h0go5734828s" path="res://examples/remote_container/target.svg" id="4_bocwq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc87r"]
 content_margin_left = 16.0
@@ -256,19 +257,11 @@ remote_path = NodePath("../../R/TextureRect")
 use_global_coordinates = false
 metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Sections/L/RemoteContainer"]
+[node name="TextureRect" type="TextureRect" parent="Sections/L/RemoteContainer"]
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-color = Color(0.372549, 0.588235, 0.831373, 1)
-
-[node name="Label" type="Label" parent="Sections/L/RemoteContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "Container"
-horizontal_alignment = 1
-vertical_alignment = 1
+texture = ExtResource("1_l3gds")
+expand_mode = 1
 
 [node name="Animation" type="AnimationPlayer" parent="Sections/L/RemoteContainer"]
 libraries = {
@@ -297,7 +290,7 @@ offset_right = 64.0
 offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_l3gds")
+texture = ExtResource("4_bocwq")
 expand_mode = 1
 
 [node name="Options" type="PanelContainer" parent="."]

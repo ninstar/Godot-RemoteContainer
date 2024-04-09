@@ -12,9 +12,9 @@ config_version=5
 
 config/name="RemoteContainer"
 config/description="RemoteContainer pushes its own transform to another Control derived node in the scene."
-run/main_scene="res://example/scene.tscn"
+run/main_scene="res://examples/remote_container/scene.tscn"
 config/features=PackedStringArray("4.2")
-config/icon="res://icon.svg"
+config/icon="res://examples/remote_container/source.svg"
 
 [editor_plugins]
 
