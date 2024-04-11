@@ -24,10 +24,10 @@
 class_name RemoteContainer extends Container
 
 
-## [RemoteContainer] pushes its own transform to another [Control] derived
+## RemoteContainer pushes its own transform to another [Control] derived
 ## node in the scene.
 ##
-## RemoteContainer pushes its own transform to another [Control] derived node
+## [b]RemoteContainer[/b] pushes its own transform to another [Control] derived node
 ## (called the remote node) in the scene.[br][br]
 ## It can be set to update another node's size, position, rotation, scale and/or
 ## pivot offset. It can use either global or local coordinates.
