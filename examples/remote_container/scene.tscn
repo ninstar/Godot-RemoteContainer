@@ -265,7 +265,7 @@ expand_mode = 1
 
 [node name="Animation" type="AnimationPlayer" parent="Sections/L/RemoteContainer"]
 libraries = {
-"": SubResource("AnimationLibrary_4h073")
+&"": SubResource("AnimationLibrary_4h073")
 }
 autoplay = "default"
 

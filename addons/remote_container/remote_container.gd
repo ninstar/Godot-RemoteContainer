@@ -43,7 +43,7 @@ var _remote_node: Control
 ## remote node disappears; [member force_update_cache] forces it to update
 ## the cache again.
 func force_update_cache() -> void:
-	_remote_node = get_node_or_null(remote_path)
+	_remote_node = get_node_or_null(remote_path) as Control
 
 
 #region Virtual methods
@@ -82,13 +82,16 @@ func _notification(what: int) -> void:
 		if update_pivot_offset:
 			_remote_node.pivot_offset = pivot_offset
 	elif what == NOTIFICATION_PRE_SORT_CHILDREN:
+		
 		# Apply size flags to child Control nodes
 		for child: Node in get_children():
 			if child is Control:
+				var control := child as Control
+				
 				# Skip if Control is top level
-				if not child.is_visible_in_tree() or child.top_level:
+				if not control.is_visible_in_tree() or control.top_level:
 					continue
-				fit_child_in_rect(child, Rect2(Vector2.ZERO, size))
+				fit_child_in_rect(control, Rect2(Vector2.ZERO, size))
 
 #endregion
 #region Getters & Setters
