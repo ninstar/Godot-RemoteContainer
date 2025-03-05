@@ -1,8 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://cixkw7f83ylsv"]
 
-[ext_resource type="Script" path="res://examples/remote_container/script.gd" id="1_cmmrs"]
+[ext_resource type="Script" uid="uid://bmp1nbthokrg8" path="res://examples/remote_container/script.gd" id="1_cmmrs"]
 [ext_resource type="Texture2D" uid="uid://chl8j63gob5yj" path="res://examples/remote_container/source.svg" id="1_l3gds"]
-[ext_resource type="Script" path="res://addons/remote_container/remote_container.gd" id="1_pgkge"]
+[ext_resource type="Script" uid="uid://bbbqycpc0gidw" path="res://addons/remote_container/remote_container.gd" id="1_pgkge"]
 [ext_resource type="Texture2D" uid="uid://h0go5734828s" path="res://examples/remote_container/target.svg" id="4_bocwq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc87r"]
@@ -148,8 +148,8 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4h073"]
 _data = {
-"RESET": SubResource("Animation_0nnym"),
-"default": SubResource("Animation_potud")
+&"RESET": SubResource("Animation_0nnym"),
+&"default": SubResource("Animation_potud")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mjgp4"]
